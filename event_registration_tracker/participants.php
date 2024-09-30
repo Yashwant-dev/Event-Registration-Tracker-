@@ -63,16 +63,12 @@ if (isset($_GET['delete'])) {
             <button type="submit">Add Participant</button>
         </form>
 
-<?php // Load JSON data from file
-$json_data = file_get_contents('participants.json');
-$participant = json_decode($json_data, true);?>
-
         <h2>Existing Participants</h2>
         <ul>
             <?php foreach ($participantsData as $participant): ?>
                 <li>
                     <?php echo htmlspecialchars($participant['name']); ?> 
-                    (<a href="?delete=<?php echo urlencode($participant['participant_id']); ?>">Delete</a>)
+                    (<a href="?delete=<?php echo urlencode($participant['participant_id']); ?>" style="color: red;">Delete</a>)
                 </li>
             <?php endforeach; ?>
         </ul>
