@@ -1,0 +1,30 @@
+[
+    {
+        "participant_id": "P001",
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "preference": "Hackathon"
+    },
+    {
+        "participant_id": "P002",
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+1234567891",
+        "preference": "Workshop"
+    },
+    {
+        "participant_id": "P003",
+        "name": "David Johnson",
+        "email": "david.johnson@example.com",
+        "phone": "+1234567892",
+        "preference": "Hackathon"
+    },
+    {
+        "participant_id": "P004",
+        "name": "Emily Brown",
+        "email": "emily.brown@example.com",
+        "phone": "+1234567893",
+        "preference": "Webinar"
+    }
+]

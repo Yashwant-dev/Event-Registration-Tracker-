@@ -1,0 +1,23 @@
+[
+    {
+        "event_id": "E001",
+        "event_name": "EXPOSE2024 Hackathon",
+        "event_type": "Hackathon",
+        "event_date": "2024-10-15",
+        "organizer": "BCIIT Technical Club"
+    },
+    {
+        "event_id": "E002",
+        "event_name": "AI in Healthcare Workshop",
+        "event_type": "Workshop",
+        "event_date": "2024-11-05",
+        "organizer": "BCIIT Technical Club"
+    },
+    {
+        "event_id": "E003",
+        "event_name": "Web Development Webinar",
+        "event_type": "Webinar",
+        "event_date": "2024-12-01",
+        "organizer": "BCIIT Technical Club"
+    }
+]
