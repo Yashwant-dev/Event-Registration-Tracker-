@@ -29,12 +29,14 @@ if (isset($_GET['delete'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Registrations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Manage Registrations</h1>
@@ -67,16 +69,11 @@ if (isset($_GET['delete'])) {
             <button type="submit">Add Registration</button>
         </form>
 
-
-        <?php // Load JSON data from file
-$json_data = file_get_contents('registrations.json');
-$registration = json_decode($json_data, true);?>
-
         <h2>Existing Registrations</h2>
         <ul>
             <?php foreach ($registrationsData as $registration): ?>
                 <li>
-                    <?php echo htmlspecialchars($registration['registration_id']); ?> 
+                    <?php echo htmlspecialchars($registration['registration_id']); ?>
                     (<a href="?delete=<?php echo urlencode($registration['registration_id']); ?>">Delete</a>)
                 </li>
             <?php endforeach; ?>
@@ -86,4 +83,5 @@ $registration = json_decode($json_data, true);?>
         <p>&copy; 2024 Event Registration Tracker</p>
     </footer>
 </body>
+
 </html>
